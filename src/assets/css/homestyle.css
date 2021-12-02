@@ -1,0 +1,468 @@
+/* 首页模块一 */
+
+.sectionOne {
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100%;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/bmImg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* .weibostyle{
+  background: url(../img/bmImg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+} */
+
+.coverBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55)
+}
+
+.centerTitle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 2em;
+    font-family: "STXingkai", "STXinwei", "STKaiti", "STLiti", "Xingkai SC", "KaiTi", "Microsoft Yahei", "SimSun"
+}
+
+.keepOn {
+    color: rgba(255, 255, 255, .75);
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: inherit;
+    margin-bottom: 15px;
+
+}
+
+.centerTitle span {
+    padding: 10px 15px;
+    background: #1e9fff;
+    border-radius: 25px;
+    font-size: 16px;
+    height: 30px;
+    font-family: none;
+}
+
+.centerTitle span:hover {
+    background-color: #1e9fffde;
+}
+
+.abou-article {
+    font-size: 16px;
+}
+
+.cy-about {
+    padding: 30px 0;
+    font-size: 1.125em;
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.infoBox {
+    padding: 3.125em 15px;
+    /* background-color: #eeeeee; */
+}
+
+.infoBox p {
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 800px;
+    line-height: 1.875em;
+    text-align: center;
+    color: #777;
+    margin: 20px 0;
+}
+
+.readMore {
+    width: 142px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0;
+    line-height: 40px;
+    display: block;
+    color: white;
+    background-color: #1E9FFF;
+    border-color: #007bff;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
+    -ms-box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
+    border: 2px solid transparent;
+}
+
+.readMore:hover {
+    color: white;
+}
+
+
+/* 热门文章 */
+
+.cy-article {
+    background-color: #eee;
+    padding: 3.125em 0;
+}
+
+.articleList {
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.articleList li {
+    /* width: 30%; */
+    list-style-type: none;
+}
+
+.sectionTitle {
+    margin: auto;
+    text-align: left;
+}
+
+.sectionTitle h2 {
+    font-size: 34px;
+    font-weight: normal;
+    padding-left: 30px;
+}
+
+.sectionTitle p {
+    color: #868e96;
+    font-size: 18px;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.articleRow {
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+/* .articleCol {
+    padding: 25px 0;
+} */
+
+.articleInfo {
+    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: #FFF;
+    transition: all .3s ease-in-out;
+}
+
+.articleInfo:hover {
+    box-shadow: 0 5px 15px -5px #333;
+    transform: translateY(-6px);
+}
+
+.card-Img {
+    display: block;
+    overflow: hidden;
+    max-height: 240px;
+}
+
+.articleImg {
+    width: 100%;
+    max-height: 240px;
+    /* 触摸图片放大动画 */
+    transition: all .4s;
+}
+
+
+/* 触摸放大图片动画 */
+
+.articleInfo:hover .articleImg {
+    transform: scale(1.2);
+}
+
+.card-body {
+    padding: 1.25em;
+    text-align: left;
+}
+
+.card-author {
+    font-size: 14px;
+    margin-bottom: .5em;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: .6em;
+    /* 文字超出省略 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    font-size: 14px;
+    line-height: 26px;
+    height: 102.4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+}
+
+.card-more {
+    display: block;
+    text-align: right;
+    color: #1e9fff;
+    font-size: 14px;
+}
+
+
+/* 最近留言 */
+
+.swiperOption {
+    display: block;
+    position: relative;
+}
+
+.swiperOption2 {
+    display: none;
+}
+
+.cy-recent {
+    padding-top: 50px;
+    background-color: white;
+}
+
+.recentSwiper {
+    margin: auto;
+}
+
+.tittle-wthree {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.demo-carousel {
+    width: 300px;
+    padding: 25px;
+}
+
+.messageInfo {
+    width: auto;
+    height: 100%;
+    padding: 2.5em;
+    /* 设置阴影 (上左右下) */
+    box-shadow: 0 0 20px 3px #e8e8e880, 0 0 20px 3px #e8e8e880, 0 0 20px 3px #e8e8e880, 0 0 20px 3px #e8e8e880;
+    background: transparent;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.swiper-pagination span {
+    margin: 0 5px;
+}
+
+.messText {
+    font-size: 14px;
+}
+
+.symbol {
+    font-size: 40px;
+    color: #0dd3ff;
+    transform: rotate(180deg);
+}
+
+.userBox {
+    color: #34bf49;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.headImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.messageNumber {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #FFF;
+    position: relative;
+    background-image: url(../img/computer.png);
+    background-size: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.numberRow {
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.dotIcon {
+    font-size: 50px;
+}
+
+.dotNumber {
+    font-size: 40px;
+}
+
+.dotText {
+    font-size: 18px;
+}
+
+.numberCol {
+    margin: auto;
+}
+
+
+/* 热评用户 */
+
+.cy-hotBox {
+    background-color: #f9f9f9;
+}
+
+.divider {
+    display: block;
+}
+
+.cy-comment {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: auto;
+}
+
+.cy-comment h1 {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 70px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.commentRow {
+    position: relative;
+    margin-top: -60px;
+}
+
+
+/* .commentCol{
+  padding: 12.5px;
+  display: flex;
+  display: inline-block;
+} */
+
+.commentHead {
+    margin: 10px 0;
+}
+
+
+/* .commentCol:hover .comment-headImg{
+  transform: rotate(360deg);
+  transition-duration: 1s;
+} */
+
+
+/* .commentImg img{
+  transition: all .4s;
+} */
+
+
+/* .commentCol:hover .commentImg img{
+  transform: scale(1.2);
+} */
+
+.commentHead .ivu-avatar-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+
+/* .commentImg img{
+  width: 70px;
+  height: 70px;
+} */
+
+.commentName {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #555;
+}
+
+.commentNum {
+    margin: 10px 0;
+    color: #888;
+    padding: 0 1em;
+    font-size: 14px;
+}
+
+.commentNum span {
+    padding: 3px 5px;
+    background-color: #FFB800;
+    color: white;
+    font-size: 12px;
+}
+
+
+/* 近期访客 */
+
+.recentMessage {
+    width: 75px;
+    display: flex;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.recentHead {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.recentName {
+    margin: 10px 0;
+    font-size: .9em;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.swiper-pagination {
+    margin: 10px;
+}

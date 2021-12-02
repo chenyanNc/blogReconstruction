@@ -1,0 +1,379 @@
+.art-container{
+  margin: auto;
+  /* position: relative; */
+  padding-bottom: 35px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+.articleRow{
+  width: 1170px;
+  padding-top: 25px;
+}
+/* 左侧样式 */
+.single-post{
+  margin-bottom: 25px;
+}
+.inner-post{
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.post-img{
+  width: 25%;
+}
+.post-img img{
+  height: 100%;
+}
+.post-info{
+  width: 75%;
+  padding-left: 25px;
+  text-align: left;
+}
+.post-infoTitle{
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  color: #333;
+}
+.post-infoTitle:hover{
+  color: #333333ba;
+}
+.post-infoText{
+  height: 105px;
+  font-size: 16px;
+  color: #333;
+  line-height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+.post-infoPag{
+  overflow: hidden;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.post-infoMore{
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+.blog-meta{
+  margin: 0;
+  padding: 0;
+}
+.blog-meta li{
+  display: inline-block;
+  margin-right: 3px;
+  color: #838383;
+  font-size: 12.5px;
+}
+.blog-meta li img{
+  width: 15px;
+  vertical-align: middle;
+}
+.brow{
+  color: #096;
+}
+.brow:hover, .post-infoMore:hover{
+  text-decoration: underline;
+}
+/* 右侧样式 */
+.card{
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.card-search /deep/ .ivu-input{
+  height: 50px;
+  font-size: 14px;
+}
+.card-search /deep/ .ivu-input-prefix, .card-search /deep/ .ivu-input-suffix{
+  line-height: 50px;
+}
+.card-search /deep/ .ivu-input-icon{
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+}
+.card-search /deep/ .ivu-input-icon:hover{
+  font-size: 28px !important;
+} 
+.card-search /deep/ .ivu-input:focus{
+ border: 2px solid #659FFD;
+ box-shadow: none;
+}
+.card-search{
+  border: 1px solid #f1efef;
+  border-radius: 4px;
+}
+.card-section{
+  padding: 20px 0 13px 0;
+}
+.card-column{
+  font-size: 14.5px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  color: #484848;
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  margin: 0 20px;
+}
+.card-content li{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-content li:hover{
+  border-left: 3px solid #5FB878;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.card-route span, .hot-route span{
+  display: block;
+  height: 20px;
+  padding: 0 5px;
+  line-height: 18px;
+  border: 1px solid #e6e6e6;
+  color: #666;
+}
+.card-route, .hot-route, .hot-like{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  color: #787977;
+}
+/* 栏目分类底部动画 */
+.card-column:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  bottom: -1px;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.card-column:hover:after {
+  width: 100%;
+}
+
+/* 热门文章 */
+.hot-route, .hot-like{
+  justify-content: left;
+  color: #000;
+}
+.hot-route p{
+  margin-left: 10px;
+}
+.hot-content li:hover{
+  border: none;
+}
+.hot-route span{
+  background-color: #eee;
+  border: #eee;
+  color: #666;
+}
+.hot-route:nth-child(1) span{
+  background-color: #FF5722;
+  color: #fff;
+}
+.hot-like /deep/ .ivu-badge-status-text{
+  color: #000;
+}
+.card-paging >>> .ivu-page-item:hover{
+  border-color: #009688;
+}
+.card-paging >>> .ivu-page-item:hover a{
+  color: #009688;
+}
+.card-paging >>> .ivu-page-item-active{
+  border-color: #009688;
+  background-color: #009688;
+}
+.card-paging >>> .ivu-page-item-active a, .card-paging >>> .ivu-page-item-active:hover a{
+ color: #fff;
+}
+.card-paging >>> .ivu-page-next:hover, .card-paging >>> .ivu-page-prev:hover{
+  border-color: #009688;
+}
+.card-paging >>> .ivu-page-next:hover a, .card-paging >>> .ivu-page-prev:hover a{
+  color: #009688;
+}
+.card-paging >>> a:hover, .card-paging >>> a{
+  color: #009688;
+}
+.card-paging >>> .ivu-page-options-elevator input:hover{
+  border-color: #009688;
+}
+.card-paging >>> .ivu-page-options-elevator input:focus{
+  border-color: #009688;
+  box-shadow: none;
+}
+.page-box{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.page-box /deep/ .ivu-btn-success {
+  color: #fff;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/* 文章归档 */
+.arch-card{
+  position: relative;
+  padding: 30px 20px 20px 20px;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  -o-box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0 0 3px rgba(0,0,0,0.05);
+  -ms-box-shadow: 0 0 3px rgba(0,0,0,0.05);
+}
+.arch-classify{
+  padding: 5px 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* 底部线条动画 */
+.arch-classify:after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  bottom: 0;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.arch-classify:hover:after {
+  width: 100%;
+}
+
+.arch-classify span{
+  margin: 0 5px;
+}
+.timeLine /deep/ .ivu-timeline-item-head{
+  width: 15px;
+  height: 15px;
+}
+.timeTitle{
+  font-weight: 500;
+  color: #333;
+  font-size: 18px;
+}
+.timeLink{
+  border: none;
+  color: #01AAED;
+}
+.timeDot /deep/ .ivu-badge-status-text{
+  color: #01AAED;
+}
+.timeDot /deep/ .ivu-badge-status-success{
+  background: #666;
+}
+
+/* 资源分享 */
+.arch-card /deep/ .ivu-tabs-nav{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.arch-card /deep/  .ivu-tabs-nav .ivu-tabs-tab{
+  font-size: 14px;
+}
+.arch-card /deep/  .ivu-tabs-nav .ivu-tabs-tab-active{
+  color: #5fb878;
+  /* font-size: 14px; */
+}
+.arch-card /deep/  .ivu-tabs-nav .ivu-tabs-tab:hover{
+  color: #5fb878;
+}
+.arch-card /deep/ .ivu-tabs-ink-bar{
+  background-color: #5fb878;
+}
+.moment-cardList{
+  padding: 10px;
+}
+.moment-card{
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.18);
+  position: relative;
+  transition: all 1s ease 0s;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.moment-title{
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #2d8cf0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.moment-title:hover{
+  text-decoration: underline;
+}
+.moment-headImg{
+  transition: all .4s;
+}
+/* 触摸图片放大动画 */
+.moment-headImg:hover{
+  transform: scale(1.05);
+  filter: brightness(.5);
+}
+.moment-text{
+  padding: 0 10px 15px 15px;
+  height: 50px;
+}
+.moment-text p{
+  height: 100%;
+  font-size: 12px;
+  color: #838383;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.moment-sort{
+  padding: 0 15px;
+  font-size: 12px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.moment-cardfoot{
+  margin-top: 10px;
+  background-color: #f6f6f6;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: left;
+  font-size: 14px;
+  color: #8b8b8c;
+}
+.moment-cardfoot p{
+  margin-right: 10px;
+}
