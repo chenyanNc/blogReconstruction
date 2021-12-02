@@ -1,4 +1,9 @@
+
+
+#### 个人博客
+
 #### 安装相关依赖
+
 npm install
 
 #### 运行项目
@@ -29,3 +34,12 @@ Vue + iView + vue-awesome-swiper(轮播插件) + vue-count-to (数值滚动插�
 
 ```
 
+
+
+![首页](./blogImg/首页.png)
+
+![学无止境](./blogImg/学无止境.png)
+
+![文章归档](./blogImg/文章归档.png)
+
+![资源分享](./blogImg/资源分享.png)
